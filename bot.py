@@ -6,10 +6,16 @@ import sys
 sys.path.insert(0, '../libcurrency')
 import libcurrency.libcurrency as libcurrency
 
-botToken = 'NTkzNTYxNTY3MjE2NTMzNTI4.XRPrxg.4wSQ6ghm3ITje8F2nrezOR3Y-nU' # Insert bot token here
+try:
+    tkn = open("token.txt","r").readline()
+except:
+    print("token file does not exist!")
+    open("token.txt","w+")
+    print("Token file created. Add your token to it.")
+    exit()
 
+botToken = tkn.strip()
 bot = commands.Bot(command_prefix='$', description='Higgsbot')
-
 currency = libcurrency.Token()
 
 extensions = ['money',
