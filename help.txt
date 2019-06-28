@@ -1,21 +1,6 @@
 ```
-Welcome to Higgsbot
-This help text file, along with the bot itself, is a WIP.
+Welcome to Higgsbot!
 
-Commands
+Do $help for help on what commands are available!
 
-code: takes in code, does some magic, and poof.
-Usage: higgs code [CodeTokens to use] [language in all lower case] [code]
-You can start a new line, and use that fancy three ` code box, the bot takes care of that
-
-hello: hello world
-Usage: higgs hello
-
-help: shows this help.txt file
-Usage: higgs help
-
-codetoken: does codetokeny stuff.
-Usage: higgs codetoken [check/add] [integer amount of CodeTokens to add]
-A rudimentary anti-abuse mechanism is in place that limits the amount of tokens to 10.
-Until priviledge checks are added, this will be used. Sorry!
 ```
