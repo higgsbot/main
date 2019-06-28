@@ -4,7 +4,7 @@ from discord.ext import commands
 import traceback
 import sys
 sys.path.insert(0, '../libcurrency')
-import libcurrency
+import libcurrency.libcurrency as libcurrency
 
 botToken = 'NTkzNTYxNTY3MjE2NTMzNTI4.XRPrxg.4wSQ6ghm3ITje8F2nrezOR3Y-nU' # Insert bot token here
 

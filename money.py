@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-import libcurrency
+import libcurrency.libcurrency as libcurrency
 
 currency = libcurrency.Token()
 
