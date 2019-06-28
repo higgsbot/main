@@ -4,7 +4,7 @@ import sys
 sys.path.insert(0, '../libcurrency')
 import stub as libcurrency
 
-botToken = 'NTkzMzc3NTAzMDMzNDI1OTMw.XRNgCA.LhmFe2JggNxn81hdtDALwgO1Ctw' # Insert bot token here
+botToken = '' # Insert bot token here
 currency = libcurrency.Token()
 client = discord.Client()
 
