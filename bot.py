@@ -6,26 +6,22 @@ import sys
 sys.path.insert(0, '../libcurrency')
 import libcurrency
 
-botToken = '' # Insert bot token here
+botToken = 'NTkzNTYxNTY3MjE2NTMzNTI4.XRPrxg.4wSQ6ghm3ITje8F2nrezOR3Y-nU' # Insert bot token here
 
 bot = commands.Bot(command_prefix='$', description='Higgsbot')
 
 currency = libcurrency.Token()
 
+extensions = ['money',
+              'general',
+              'containers']
 
 if __name__ == '__main__':
-    try:
-        bot.load_extension("money")
-    except Exception as e:
-        print(f'Failed to load extension.', file=sys.stderr)
-traceback.print_exc()
-
-if __name__ == '__main__':
-    try:
-        bot.load_extension("general")
-    except Exception as e:
-        print(f'Failed to load extension.', file=sys.stderr)
-traceback.print_exc()
+    for extension in extensions:
+        try:
+            bot.load_extension(extension)
+        except Exception as e:
+            print(f'Failed to load extension {extension}.', file=sys.stderr)
 
 @bot.event
 async def on_ready():
