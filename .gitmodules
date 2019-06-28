@@ -1,0 +1,6 @@
+[submodule "libcontainer"]
+	path = libcontainer
+	url = https://github.com/higgsbot/libcontainer.git
+[submodule "libcurrency"]
+	path = libcurrency
+	url = https://github.com/higgsbot/libcurrency.git
