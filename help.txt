@@ -1,0 +1,6 @@
+```
+Welcome to Higgsbot!
+
+Do $help for help on what commands are available!
+
+```
