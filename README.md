@@ -29,7 +29,7 @@ Ubuntu:
 ```bash
 sudo apt update
 sudo apt install build-essentials golang nasm python3.7 git -y
-git clone https://github.com/higgsbot/main.git
+git clone --recurse-submodules https://github.com/higgsbot/main.git
 cd main
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3.7 get-pip.py
