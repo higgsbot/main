@@ -16,8 +16,7 @@ class Containers(commands.Cog, name="Container Plugin"):
         """Use this command to execute your code."""
         c = currency.check_balance(ctx.message.author)
         if c >= b:
-            a = b * 5
-            r = container.run_code(lang, code, a)
+            r = container.run_code(lang, code)
             currency.remove_balance(ctx.message.author, b)
             if r.chroot == False:
                 chr = "NOCHROOT"

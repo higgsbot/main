@@ -44,5 +44,7 @@ Open `owner.txt` and paste in the user IDs of the bot owners/administrators sepe
 
 The users with their IDs in that file will be able to give and take away CodeTokens from other users and themselves.
 
+Unless you want to enter your sudo password in to the console each time sudo times out, you will have to allow the bot to run sudo commands without password. Follow [this SO](https://askubuntu.com/questions/147241/execute-sudo-without-password/147265#147265) to accomplish that.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
