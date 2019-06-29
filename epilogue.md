@@ -1,4 +1,4 @@
-# Epilogues
+﻿# Epilogues
 
 ## IOIIIO
 I had a lot of fun writing this project. It was something to do in my first week of holidays. I haven’t worked much in teams before on projects, so it was a new experience, but I liked it.
@@ -19,3 +19,10 @@ I'm starting to become much more interested and engaging more multi-person proje
 This is a project I've wanted to work on for a long time, and I'd like to continue it outside the hack-a-thon context when I have more time to do so. I find the idea of being able to share code and command executions over Discord to be quite interesting, especially as me and my friends are all hobbyist (or professional, but mostly hobbyist) developers/system administrators.
 
 Thanks for checking out the bot, or at least reading these little epilogues. I always find the writing engineers of a project make after said project interesting, whenever they do. I should maybe get some sleep now, I have more furniture arriving tomorrow and I need to be awake for getting and building it!
+
+## zackerthescar	
+So this is basically my first full-fledged experience working on a project, let alone one for a team. I had very rudimentary knowledge of the stuff at hand, and I didn't really know what I was doing. (I still don't)
+
+Obviously, for a beginner, I didn't know much of what I can and can't do. I had to rewrite the bot a few times over from not knowing what to do and looking at different tutorials, but I think we ended up with a good bot that accomplishes a good part of what we were aiming for when the hack week started.
+
+I learned more than just a lot working on this project, and I'm looking forward to participating in more projects like this. I'm probably gonna go get some lunch now while I stare at the creation the three of us made on my phone or something
