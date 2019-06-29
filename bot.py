@@ -3,7 +3,6 @@ import discord
 from discord.ext import commands
 import traceback
 import sys
-sys.path.insert(0, '../libcurrency')
 import libcurrency.libcurrency as libcurrency
 
 try:
