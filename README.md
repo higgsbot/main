@@ -7,7 +7,7 @@ A few safety measures have been implemented. For more information, read the [doc
 ## Supported Languages
 
 - C
-- asm
+- C++
 - Go
 
 ## Requirements
@@ -16,7 +16,7 @@ HiggsBot must be ran in a Linux environment with the following packages preinsta
 
 - gcc
 - golang
-- NASM
+- g++
 - Python 3.6+
 - Pip
 - Git

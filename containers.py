@@ -33,8 +33,11 @@ class Containers(commands.Cog, name="Container Plugin"):
                 embed.set_author(name=self.bot.user.display_name,url=self.bot.user.avatar_url,icon_url=self.bot.user.avatar_url)
                 embed.add_field(name="Compiled using:", value="```{}```".format(r.cc), inline=False)
                 embed.add_field(name="Compiler Result:", value="```{}```".format(r.ccr), inline=False)
-                embed.add_field(name="Result:", value="```{}```".format(r.cr), inline=False)
-                embed.set_footer(text="{} | {} | {}}".format(r.uuid, host, chr))
+                if r.cr == "":
+                    embed.add_field(name="Result:", value="No output binary could be found.".format(r.cr), inline=False)
+                else:
+                    embed.add_field(name="Result:", value="```{}```".format(r.cr), inline=False)
+                embed.set_footer(text="{} | {} | {}".format(r.uuid, host, chr))
             await ctx.send(embed=embed)
         else:
             if c != 0:
