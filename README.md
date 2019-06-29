@@ -46,5 +46,10 @@ The users with their IDs in that file will be able to give and take away CodeTok
 
 Unless you want to enter your sudo password in to the console each time sudo times out, you will have to allow the bot to run sudo commands without password. Follow [this SO](https://askubuntu.com/questions/147241/execute-sudo-without-password/147265#147265) to accomplish that.
 
+## Credits
+- @1byte_2bytes aka Sydney: All the magic that compiles and runs the code, and the libcontainer library.
+- @IOIIIO aka NoOne: libcurrency, and the cogs for use with the main bot.
+- @zackerthescar : Parts of the bot.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
