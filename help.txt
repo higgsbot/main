@@ -1,6 +1,10 @@
 ```
-Welcome to Higgsbot!
+HiggsBot is a Discord bot written for the Discord Hack-A-Ton.
+Run that random Hello World program, show off some tricks to your friends.
+The bot compiles or interprets various programming languages and prints the various results in chat.
+A few safety measures have been implemented. For more information, read the documentation.
 
 Do $help for help on what commands are available!
-
+For more information: https://github.com/higgsbot/main
+Documentation: https://github.com/higgsbot/documents
 ```
