@@ -9,13 +9,13 @@ import libcurrency.libcurrency as libcurrency
 try:
     tkn = open("token.txt","r").readline()
 except:
-    print("token file does not exist!")
+    print("Token file does not exist!")
     open("token.txt","w+")
     print("Token file created. Add your token to it.")
     exit()
 
 botToken = tkn.strip()
-bot = commands.Bot(command_prefix='$', description='Higgsbot')
+bot = commands.Bot(case_insensitive=True, command_prefix='$', description='Higgsbot')
 currency = libcurrency.Token()
 
 extensions = ['money',
@@ -28,11 +28,13 @@ if __name__ == '__main__':
             bot.load_extension(extension)
         except Exception as e:
             print(f'Failed to load extension {extension}.', file=sys.stderr)
+            traceback.print_exc()
 
 @bot.event
 async def on_ready():
 	await currency.start(bot)
 	print('Logged in as {}, {}'.format(bot.user.name, bot.user.id))
+	await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="$help for help"))
 	print('login success')
 	print('...')
 
