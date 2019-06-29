@@ -28,7 +28,7 @@ WSL on Windows is supported.
 Ubuntu: 
 ```bash
 sudo apt update
-sudo apt install build-utils golang nasm python3.7 git -y
+sudo apt install build-essentials golang nasm python3.7 git -y
 git clone https://github.com/higgsbot/main.git
 cd main
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -47,9 +47,9 @@ The users with their IDs in that file will be able to give and take away CodeTok
 Unless you want to enter your sudo password in to the console each time sudo times out, you will have to allow the bot to run sudo commands without password. Follow [this SO](https://askubuntu.com/questions/147241/execute-sudo-without-password/147265#147265) to accomplish that.
 
 ## Credits
-- @1byte_2bytes aka Sydney: All the magic that compiles and runs the code, and the libcontainer library.
-- @IOIIIO aka NoOne: libcurrency, and the cogs for use with the main bot.
-- @zackerthescar : Parts of the bot.
+- [@1byte2bytes](https://github.com/1byte2bytes) aka Sydney: All the magic that compiles and runs the code, and the libcontainer library.
+- [@IOIIIO](https://github.com/IOIIIO) aka NoOne: libcurrency, and the cogs for use with the main bot.
+- [@zackerthescar](https://github.com/zackerthescar): Parts of the bot and QC.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
