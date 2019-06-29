@@ -18,4 +18,4 @@ I'm starting to become much more interested and engaging more multi-person proje
 
 This is a project I've wanted to work on for a long time, and I'd like to continue it outside the hack-a-thon context when I have more time to do so. I find the idea of being able to share code and command executions over Discord to be quite interesting, especially as me and my friends are all hobbyist (or professional, but mostly hobbyist) developers/system administrators.
 
-Thanks for checking out the bot, or at least reading these little epilogues. I always find the writing engineers of a project make after said project, whenever they do. I should maybe get some sleep now, I have more furniture arriving tomorrow and I need to be awake for getting and building it!
+Thanks for checking out the bot, or at least reading these little epilogues. I always find the writing engineers of a project make after said project interesting, whenever they do. I should maybe get some sleep now, I have more furniture arriving tomorrow and I need to be awake for getting and building it!
