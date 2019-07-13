@@ -31,7 +31,7 @@ class General(commands.Cog, name="General Commands"):
 	@commands.command(name='readme')
 	async def readme(self,ctx):
 		"Print a simple readme"
-		f = open("help.txt", "r")
+		f = open("data/general/help.txt", "r")
 		await ctx.send(f.read())
 		f.close()
 

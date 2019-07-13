@@ -77,10 +77,10 @@ def owner(ctx):
 
 def check():
     try:
-        f = open("owner.txt", "r").readline().split(",")
+        f = open("data/bot/owner.txt", "r").readline().split(",")
     except:
         print("Owner file does not exist!") 
-        open("owner.txt","w+")
+        open("data/bot/owner.txt","w+")
         print("Owner file created. Add your owner user ID to it.")
         exit()
     return f

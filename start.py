@@ -9,11 +9,11 @@ class Launch:
         failO = False
         self.resize(80,24)
         try:
-            tkn = open("token.txt","r").readline()
+            tkn = open("data/bot/token.txt","r").readline()
         except:
             failT = True
         try:
-            f = open("owner.txt", "r").readline().split(",")
+            f = open("data/bot/owner.txt", "r").readline().split(",")
         except:
             failO = True
         if failT or failO is not False:
@@ -108,7 +108,7 @@ class Launch:
     def req(self, wipe = True):
         if wipe == True:
             self.cls()
-        r = open("requirements.txt","r").read().replace('\n', ' ').replace('\r', '')
+        r = open("data/launcher/requirements.txt","r").read().replace('\n', ' ').replace('\r', '')
         print("r = {}".format(r))
         os.system("{} -m pip install {}".format(sys.executable, r))
 
@@ -133,7 +133,7 @@ class Launch:
         print("Enter the user ID of the bot owner.")
         print("Multiple IDs can be seperated by commas, eg. 1234,1222,1238")
         id = input("")
-        f = open("owner.txt","w+")
+        f = open("data/bot/owner.txt","w+")
         f.write(id)
         f.close()
 
@@ -142,7 +142,7 @@ class Launch:
         print("Enter the bot token you got from the Discord developer site.")
         token = input("")
         if "." in token:
-            f = open("token.txt","w+")
+            f = open("data/bot/token.txt","w+")
             f.write(token)
             f.close()
         else:

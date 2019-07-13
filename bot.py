@@ -6,10 +6,10 @@ import sys
 import libcurrency.libcurrency as libcurrency
 
 try:
-    tkn = open("token.txt","r").readline()
+    tkn = open("data/bot/token.txt","r").readline()
 except:
     print("Token file does not exist!")
-    open("token.txt","w+")
+    open("data/bot/token.txt","w+")
     print("Token file created. Add your token to it.")
     exit()
 
@@ -17,9 +17,9 @@ botToken = tkn.strip()
 bot = commands.Bot(case_insensitive=True, command_prefix='$', description='Higgsbot')
 currency = libcurrency.Token()
 
-extensions = ['money',
-              'general',
-              'containers']
+extensions = ['cogs.money',
+              'cogs.general',
+              'cogs.containers']
 
 if __name__ == '__main__':
     for extension in extensions:
