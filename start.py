@@ -9,11 +9,11 @@ class Launch:
         failO = False
         self.resize(80,24)
         try:
-            tkn = open("data/bot/token.txt","r").readline()
+            open("data/bot/token.txt","r").readline()
         except:
             failT = True
         try:
-            f = open("data/bot/owner.txt", "r").readline().split(",")
+            open("data/bot/owner.txt", "r").readline().split(",")
         except:
             failO = True
         if failT or failO is not False:
@@ -118,7 +118,7 @@ class Launch:
             code = subprocess.call(("git", "pull", "--ff-only"))
         except FileNotFoundError:
             print("\nError: Git not found. It's either not installed or not in PATH.")
-        return
+            return
         if code == 0:
             print("\nUpdated successfully.")
         else:
